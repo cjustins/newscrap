@@ -9,8 +9,37 @@ def load_clustered_data():
 
 # Streamlit app function
 def main():
-    st.title("📰 **News Article Clustering**")
-    st.write("---")
+    # st.title("📰 **News Article Clustering**")
+    # st.write("---")
+     st.markdown(
+        """
+        <style>
+        /* Import Google Font */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+        /* Style for the custom title */
+        .custom-title {
+            font-family: 'Roboto', sans-serif;
+            font-size: 36px;
+            font-weight: bold;
+            color: #1f77b4;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Style for horizontal line */
+        .custom-hr {
+            border: 2px solid #333;
+            margin: 20px 0;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+    
+    # Custom styled title
+    st.markdown('<h1 class="custom-title">📰 News Article Clustering</h1>', unsafe_allow_html=True)
+    
 
     # Load the clustered dataframe
     data = load_clustered_data()
