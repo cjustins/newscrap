@@ -11,7 +11,7 @@ def load_clustered_data():
 def main():
     # st.title("📰 **News Article Clustering**")
     # st.write("---")
-     st.markdown(
+    st.markdown(
         """
         <style>
         /* Import Google Font */
