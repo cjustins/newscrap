@@ -9,8 +9,6 @@ def load_clustered_data():
 
 # Streamlit app function
 def main():
-    st.markdown("Cousins Sendekera R207642E HAI")
-
     st.title("NEWS ARTICLE CLUSTERING")
 
     # Load the clustered dataframe
