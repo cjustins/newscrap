@@ -27,6 +27,16 @@ def main():
             margin-bottom: 20px;
         }
 
+  /* Style for the custom header */
+        .custom-header {
+            font-family: 'Roboto', sans-serif;
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+            margin: 20px 0;
+        }
+
         /* Style for horizontal line */
         .custom-hr {
             border: 2px solid #333;
@@ -50,7 +60,7 @@ def main():
     st.sidebar.header("🔍 **Filter Options**")
     selected_category = st.sidebar.selectbox("Select a Category", categories)
 
-    st.header(f"{selected_category} Articles")
+    st.markdown(f'<h2 class="custom-header">{selected_category} Articles</h2>', unsafe_allow_html=True)
 
     category_cluster_mapping = {'Business': 0, 'Politics': 1, 'Sports': 2, 'Entertainment': 3}
     selected_cluster = category_cluster_mapping[selected_category]
