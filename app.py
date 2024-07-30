@@ -41,6 +41,13 @@ def main():
             unsafe_allow_html=True
         )
 
+          st.markdown(
+            """
+            <hr style="border: 1px solid #ccc;">
+            """,
+            unsafe_allow_html=True
+        )
+
 # Running the app
 if __name__ == "__main__":
     main()
